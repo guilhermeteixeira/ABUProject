@@ -49,9 +49,9 @@ public class Onde extends FragmentActivity
         mList.setOnItemClickListener((AdapterView.OnItemClickListener) this);
     }
 
-    // Evento de clique do botão
+    // Evento de clique do botï¿½o
     public void abrirMenu(View v){
-        // Se estive aberto, feche. Senão abra.
+        // Se estive aberto, feche. Senï¿½o abra.
         if (mSlidingLayout.isOpen()){
             mSlidingLayout.closePane();
         } else {
@@ -64,7 +64,7 @@ public class Onde extends FragmentActivity
     public void onItemClick(AdapterViewCompat<?> adapterViewCompat, View view, int i, long l) {
 
     }
-
+//y9u87y98
     @Override
     public void onPanelSlide(View view, float v) {
 

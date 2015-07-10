@@ -38,8 +38,6 @@
             android:id="@+id/textView"
             android:layout_centerVertical="true"
             android:layout_alignParentStart="true" />
-
-
     </RelativeLayout>
 
 </android.support.v4.widget.SlidingPaneLayout>
