@@ -16,6 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Onde"
+            android:label="@string/title_activity_onde" >
+        </activity>
+        <activity
+            android:name=".QuemSomos"
+            android:label="@string/title_activity_quem_somos" >
+        </activity>
+        <activity
+            android:name=".RedesSociais"
+            android:label="@string/title_activity_redes_sociais" >
+        </activity>
     </application>
 
 </manifest>

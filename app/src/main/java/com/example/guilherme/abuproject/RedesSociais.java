@@ -16,9 +16,9 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 
-public class MainActivity extends FragmentActivity
+public class RedesSociais extends FragmentActivity
         implements AdapterViewCompat.OnItemClickListener,
-       SlidingPaneLayout.PanelSlideListener, AdapterView.OnItemClickListener {
+        SlidingPaneLayout.PanelSlideListener, AdapterView.OnItemClickListener {
     private Toast toast;
     private long lastBackPressTime = 0;
     private SlidingPaneLayout mSlidingLayout;
@@ -30,7 +30,7 @@ public class MainActivity extends FragmentActivity
         // Colocando a Activity em tela cheia (opcional)
         requestWindowFeature(Window.FEATURE_NO_TITLE);
 
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_redes_sociais);
 
 
         mSlidingLayout = (SlidingPaneLayout)
@@ -49,9 +49,9 @@ public class MainActivity extends FragmentActivity
         mList.setOnItemClickListener((AdapterView.OnItemClickListener) this);
     }
 
-    // Evento de clique do bot√£o
+    // Evento de clique do bot„o
     public void abrirMenu(View v){
-        // Se estive aberto, feche. Sen√£o abra.
+        // Se estive aberto, feche. Sen„o abra.
         if (mSlidingLayout.isOpen()){
             mSlidingLayout.closePane();
         } else {
@@ -90,24 +90,22 @@ public class MainActivity extends FragmentActivity
         switch (opcao) {
 
             case "Home"://HOME
-                Intent intent0 = new Intent(MainActivity.this, MainActivity.class);
-                startActivity(intent0);
+                Intent intent0 = new Intent(RedesSociais.this, MainActivity.class);
                 finish();
+                startActivity(intent0);
                 break;
             case "Onde?"://ONDE
-                Intent intent1 = new Intent(MainActivity.this, Onde.class);
+                Intent intent1 = new Intent(RedesSociais.this, Onde.class);
                 startActivity(intent1);
                 finish();
                 break;
             case "Quem Somos?"://QUEM SOMOS
-                Intent intent2 = new Intent(MainActivity.this, QuemSomos.class);
-
+                Intent intent2 = new Intent(RedesSociais.this, QuemSomos.class);
                 startActivity(intent2);
                 finish();
                 break;
             case "Redes Sociais"://REDES SOCIAIS
-                Intent intent3 = new Intent(MainActivity.this, RedesSociais.class);
-
+                Intent intent3 = new Intent(RedesSociais.this, RedesSociais.class);
                 startActivity(intent3);
                 finish();
                 break;
